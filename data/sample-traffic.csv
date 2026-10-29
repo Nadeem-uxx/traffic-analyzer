@@ -1,0 +1,145 @@
+junction,hour,cars,bikes,buses,trucks
+Central Square,0,43,35,3,28
+Central Square,1,43,40,3,27
+Central Square,2,41,35,3,30
+Central Square,3,38,37,3,30
+Central Square,4,44,44,4,28
+Central Square,5,77,70,6,31
+Central Square,6,176,145,12,19
+Central Square,7,385,341,32,48
+Central Square,8,626,632,52,80
+Central Square,9,746,665,64,91
+Central Square,10,728,590,56,86
+Central Square,11,480,461,41,64
+Central Square,12,395,347,32,46
+Central Square,13,313,331,29,43
+Central Square,14,302,314,25,40
+Central Square,15,404,352,31,49
+Central Square,16,515,472,39,56
+Central Square,17,597,549,50,86
+Central Square,18,720,599,59,84
+Central Square,19,612,520,46,69
+Central Square,20,372,325,32,51
+Central Square,21,187,168,18,24
+Central Square,22,85,78,7,37
+Central Square,23,57,49,4,31
+Railway Station,0,41,35,3,32
+Railway Station,1,34,36,3,30
+Railway Station,2,36,36,2,29
+Railway Station,3,38,38,3,28
+Railway Station,4,42,37,3,32
+Railway Station,5,62,62,5,31
+Railway Station,6,153,136,13,18
+Railway Station,7,291,290,25,45
+Railway Station,8,602,554,46,65
+Railway Station,9,677,637,49,80
+Railway Station,10,575,615,56,74
+Railway Station,11,469,442,38,65
+Railway Station,12,341,303,29,46
+Railway Station,13,278,264,27,39
+Railway Station,14,287,271,23,35
+Railway Station,15,321,313,26,40
+Railway Station,16,396,413,35,60
+Railway Station,17,598,473,45,74
+Railway Station,18,568,518,56,78
+Railway Station,19,506,499,46,61
+Railway Station,20,304,303,27,42
+Railway Station,21,180,165,16,20
+Railway Station,22,81,75,7,33
+Railway Station,23,46,45,4,29
+City Mall Chowk,0,29,31,2,31
+City Mall Chowk,1,31,26,2,31
+City Mall Chowk,2,34,31,2,27
+City Mall Chowk,3,31,27,2,26
+City Mall Chowk,4,31,32,2,30
+City Mall Chowk,5,33,31,3,32
+City Mall Chowk,6,42,40,3,5
+City Mall Chowk,7,69,59,5,8
+City Mall Chowk,8,98,102,9,14
+City Mall Chowk,9,164,179,13,21
+City Mall Chowk,10,251,237,20,29
+City Mall Chowk,11,312,255,25,38
+City Mall Chowk,12,289,277,25,41
+City Mall Chowk,13,265,273,22,35
+City Mall Chowk,14,294,253,23,38
+City Mall Chowk,15,289,291,29,44
+City Mall Chowk,16,345,330,30,52
+City Mall Chowk,17,494,459,38,55
+City Mall Chowk,18,560,507,46,74
+City Mall Chowk,19,541,439,47,64
+City Mall Chowk,20,504,493,38,57
+City Mall Chowk,21,334,340,29,47
+City Mall Chowk,22,238,199,20,51
+City Mall Chowk,23,126,127,11,37
+University Gate,0,24,22,1,29
+University Gate,1,25,22,2,28
+University Gate,2,24,21,1,30
+University Gate,3,27,23,2,28
+University Gate,4,26,24,2,30
+University Gate,5,46,43,4,28
+University Gate,6,92,82,8,13
+University Gate,7,212,205,17,30
+University Gate,8,400,379,33,51
+University Gate,9,380,408,34,58
+University Gate,10,445,418,38,51
+University Gate,11,332,269,28,43
+University Gate,12,218,228,19,28
+University Gate,13,208,173,15,23
+University Gate,14,187,193,18,23
+University Gate,15,227,201,20,28
+University Gate,16,314,248,27,34
+University Gate,17,406,329,29,47
+University Gate,18,420,359,35,51
+University Gate,19,331,319,27,45
+University Gate,20,198,222,19,29
+University Gate,21,120,110,9,13
+University Gate,22,57,49,4,34
+University Gate,23,34,29,2,28
+Highway Bypass,0,120,109,9,64
+Highway Bypass,1,148,131,12,69
+Highway Bypass,2,150,146,12,69
+Highway Bypass,3,183,175,16,77
+Highway Bypass,4,234,207,20,95
+Highway Bypass,5,348,285,25,107
+Highway Bypass,6,481,421,42,101
+Highway Bypass,7,644,546,50,116
+Highway Bypass,8,682,664,65,135
+Highway Bypass,9,703,681,57,153
+Highway Bypass,10,648,572,57,120
+Highway Bypass,11,616,574,46,118
+Highway Bypass,12,523,567,48,104
+Highway Bypass,13,534,558,47,122
+Highway Bypass,14,604,596,51,131
+Highway Bypass,15,684,602,56,130
+Highway Bypass,16,763,671,66,154
+Highway Bypass,17,766,680,62,162
+Highway Bypass,18,810,718,67,151
+Highway Bypass,19,655,636,58,141
+Highway Bypass,20,564,481,45,119
+Highway Bypass,21,429,349,34,85
+Highway Bypass,22,306,272,26,112
+Highway Bypass,23,253,240,22,96
+Old Market,0,20,17,1,29
+Old Market,1,22,21,1,29
+Old Market,2,21,19,1,26
+Old Market,3,20,17,1,28
+Old Market,4,20,18,1,25
+Old Market,5,23,19,1,28
+Old Market,6,25,26,2,3
+Old Market,7,38,38,3,5
+Old Market,8,76,65,6,9
+Old Market,9,111,100,9,15
+Old Market,10,181,148,14,22
+Old Market,11,199,188,18,23
+Old Market,12,177,169,15,26
+Old Market,13,190,164,16,25
+Old Market,14,177,180,17,22
+Old Market,15,224,214,16,24
+Old Market,16,242,242,23,31
+Old Market,17,319,260,27,40
+Old Market,18,322,342,32,45
+Old Market,19,323,356,31,43
+Old Market,20,320,294,27,40
+Old Market,21,259,239,19,33
+Old Market,22,156,150,13,44
+Old Market,23,88,85,6,38
