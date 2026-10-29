@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Analyzer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Chart.js loaded from a CDN (needs internet) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <h1>🚦 Traffic Analyzer</h1>
+    <p>Find peak hours, busiest junctions and congestion levels from traffic count data.</p>
+  </header>
+
+  <main>
+    <!-- 1. Choose data and settings -->
+    <section class="card controls">
+      <div class="control-group">
+        <h2>Data</h2>
+        <button id="loadSampleBtn" type="button">Load sample data</button>
+        <label class="file-label">
+          Upload CSV
+          <input type="file" id="csvFile" accept=".csv,text/csv">
+        </label>
+        <a href="data/sample-traffic.csv" download>Download sample CSV</a>
+        <p class="hint">CSV columns: <code>junction,hour,cars,bikes,buses,trucks</code> (hour 0-23)</p>
+      </div>
+
+      <div class="control-group">
+        <h2>Congestion levels</h2>
+        <label>Medium from <input type="number" id="mediumInput" min="1" value="500"> vehicles/hour</label>
+        <label>High from <input type="number" id="highInput" min="1" value="1000"> vehicles/hour</label>
+      </div>
+
+      <div class="control-group">
+        <h2>Junction</h2>
+        <select id="junctionSelect" aria-label="Choose junction">
+          <option value="all">All junctions</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Messages (errors / info) -->
+    <div id="message" class="message" hidden></div>
+
+    <!-- Everything below is hidden until data is loaded -->
+    <div id="results" hidden>
+      <!-- 2. Summary numbers -->
+      <section class="summary" id="summary"></section>
+
+      <!-- 3. Charts -->
+      <section class="charts">
+        <div class="card chart-card wide">
+          <h2 id="hourlyTitle">Traffic by hour</h2>
+          <div class="chart-box"><canvas id="hourlyChart"></canvas></div>
+        </div>
+        <div class="card chart-card">
+          <h2>Busiest junctions</h2>
+          <div class="chart-box"><canvas id="junctionChart"></canvas></div>
+        </div>
+        <div class="card chart-card">
+          <h2>Vehicle types</h2>
+          <div class="chart-box"><canvas id="typeChart"></canvas></div>
+        </div>
+      </section>
+
+      <!-- 4. Congestion heatmap -->
+      <section class="card">
+        <h2>Congestion by junction and hour</h2>
+        <div class="legend">
+          <span class="chip low">Low</span>
+          <span class="chip medium">Medium</span>
+          <span class="chip high">High</span>
+          <span class="hint">Hover a cell to see the vehicle count.</span>
+        </div>
+        <div class="table-scroll"><table id="heatmap"></table></div>
+      </section>
+
+      <!-- 5. Peak hour table -->
+      <section class="card">
+        <h2>Peak hour of each junction</h2>
+        <div class="table-scroll"><table id="peakTable" class="plain-table"></table></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>Made by Mohd Nadeem · MIT License</footer>
+
+  <!-- Order matters: data first, then helpers, then the app -->
+  <script src="data/sample-data.js"></script>
+  <script src="js/csvParser.js"></script>
+  <script src="js/analysis.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
