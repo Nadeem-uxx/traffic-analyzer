@@ -39,8 +39,8 @@ You can change the Medium/High limits in the page.
 
 ```csv
 junction,hour,cars,bikes,buses,trucks
-Central Square,8,640,590,52,70
-Central Square,9,702,655,58,81
+Central Square,8,626,632,52,80
+Central Square,9,746,665,64,91
 ```
 
 - `junction` - name of the junction
